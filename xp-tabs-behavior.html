@@ -197,19 +197,6 @@ A behavior used to add tabs capabilities on a custom element.
         properties: {
 
             /**
-             * The selected tab's data.
-             *
-             * @attribute data
-             * @type *
-             * @notifies
-             * @readonly
-             */
-            data: {
-                notify: true,
-                readOnly: true
-            },
-
-            /**
              * The index of the item to select by default.
              *
              * @attribute default-selected
@@ -373,19 +360,6 @@ A behavior used to add tabs capabilities on a custom element.
             self._setScrolled(self.slider.scrollLeft);
             self._setMoreLeft(self.scrolled > 0);
             self._setMoreRight(self.scrolled + self.slider.clientWidth < self.slider.scrollWidth);
-        },
-
-        // OBSERVER
-        _selectionObserver: function () {
-
-            // Vars
-            var self = this;
-
-            // Setting
-            self._setData((self.selection && self.selection.data) || null);
-
-            // Super
-            Polymer.XPSelectorBehaviorImp._selectionObserver.apply(self, arguments);
         },
 
         /*********************************************************************/
