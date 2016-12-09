@@ -1,3 +1,3 @@
 # mat-tabs
 
-See the [`documentation page`](http://expandjs.com/elements/mat-tabs) for more information.
+This repository has been merged into [`xp-elements`](https://github.com/expandjs/xp-elements).
